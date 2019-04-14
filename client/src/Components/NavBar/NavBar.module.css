@@ -1,0 +1,63 @@
+/* NAVBAR */
+.NavBar {
+  display: grid;
+  align-self: center;
+  grid-template-columns: 0.3fr 2fr 1.8fr 0.3fr;
+  grid-template-rows: auto;
+  grid-template-areas: " . logo navbar .";
+  background-color: #fff;
+}
+
+.NavBar ul {
+  list-style: none;
+  padding-left: 0;
+}
+.NavBar ul li a {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+.Navigation {
+  width: 100%;
+  align-self: center;
+  grid-area: navbar;
+  padding-bottom: 2vh;
+}
+
+.Navigation nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.Navigation nav ul li a {
+  position: relative;
+  text-decoration: none;
+  position: relative;
+  color: rgb(1, 8, 12);
+  font-size: 1.3em;
+}
+
+.Navigation nav ul li a:after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  background: black;
+  transition: 0.3s;
+}
+
+.Navigation nav ul li a:hover:after {
+  width: 100%;
+}
+
+/* LOGO */
+.Logo {
+  width: auto;
+  grid-area: logo;
+  justify-self: start;
+  padding-top: 1.5vh;
+}

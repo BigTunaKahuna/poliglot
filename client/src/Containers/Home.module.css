@@ -1,3 +1,36 @@
+/* HOME */
 .Home {
+  height: 100%;
   text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 4fr;
+  grid-template-areas:
+    "navbar"
+    "slider";
+  background: url(../assets/abstract-art-art-materials-1762851.jpg) center;
+  background-size: cover;
+}
+
+/* SLIDER */
+.Slider {
+  grid-area: slider;
+  align-self: center;
+  justify-self: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1vh 3vw;
+}
+
+.Slider h1 {
+  font-size: 3.4em;
+  letter-spacing: 2px;
+  line-height: 2em;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0.5px 0.5px black;
+}
+
+/* NAVBAR */
+.NavBar {
+  grid-area: navbar;
 }
