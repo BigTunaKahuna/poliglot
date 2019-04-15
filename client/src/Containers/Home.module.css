@@ -34,3 +34,11 @@
 .NavBar {
   grid-area: navbar;
 }
+
+@media (max-width: 1100px) {
+  .Slider h1 {
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    font-size: 2em;
+  }
+}

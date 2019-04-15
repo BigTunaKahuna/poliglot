@@ -61,3 +61,93 @@
   justify-self: start;
   padding-top: 1.5vh;
 }
+
+/* HAMBURGER */
+.Hamburger {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .NavBar {
+    position: relative;
+    display: grid;
+    align-self: center;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hamburgerMenu hamburgerMenu"
+      "  logo hamburger ";
+    background-color: #fff;
+  }
+
+  .Hamburger {
+    position: absolute;
+    z-index: 20;
+    will-change: transform;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    grid-area: hamburger;
+  }
+
+  .Bar1,
+  .Bar2,
+  .Bar3 {
+    will-change: transform;
+    width: 50px;
+    height: 7px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.7s ease;
+  }
+
+  .Change .Bar1 {
+    transform: rotate(-45deg) translate(15px, 6px);
+    background-color: white;
+  }
+
+  .Change .Bar2 {
+    opacity: 0;
+  }
+
+  .Change .Bar3 {
+    transform: rotate(45deg) translate(-12px, -35px);
+    background-color: white;
+  }
+
+  .Navigation {
+    display: none;
+  }
+
+  .Logo {
+    align-self: center;
+    justify-self: center;
+    padding-top: 0vh;
+  }
+
+  .HamburgerMenu {
+    background-color: black;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    grid-area: hamburgerMenu;
+    transition: 1s ease;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 0;
+    z-index: 1;
+  }
+
+  .HamburgerMenu nav ul li {
+    font-size: 2em;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-weight: bold;
+  }
+
+  .HamburgerMenu nav ul li a {
+    color: white;
+  }
+}

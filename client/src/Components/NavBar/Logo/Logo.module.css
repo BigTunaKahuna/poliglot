@@ -1,0 +1,10 @@
+@media (max-width: 1100px) {
+  .Logo svg {
+    width: 70vw;
+    will-change: transform;
+  }
+
+  .Logo svg g text tspan {
+    font-size: 1em !important;
+  }
+}
