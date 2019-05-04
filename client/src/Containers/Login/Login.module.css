@@ -1,0 +1,26 @@
+/* LOGIN */
+.Login {
+  display: grid;
+  grid-template-columns: auto 3fr;
+  grid-template-rows: auto 3fr;
+  grid-template-areas:
+    "navbar navbar"
+    "authForm authForm";
+}
+
+/* NAVBAR */
+.NavBar {
+  grid-area: navbar;
+}
+
+/* REGISTER FORM */
+.RegisterForm {
+  grid-area: authForm;
+  justify-self: center;
+}
+
+/* LOGIN FORM */
+.LoginForm {
+  grid-area: authForm;
+  justify-self: center;
+}

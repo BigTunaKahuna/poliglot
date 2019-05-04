@@ -1,0 +1,69 @@
+/* REGISTER FORM */
+.LoginForm {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  margin-top: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  box-shadow: 27px 25px rgba(0, 0, 0, 0.03);
+}
+
+.LoginForm form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  padding: 0 5vw;
+}
+
+.LoginForm form label {
+  font-size: 1.2em;
+  padding: 1.2vh 0;
+  width: 14em;
+}
+
+.LoginForm form input {
+  font-size: 1.2em;
+}
+
+.LoginForm form input::placeholder {
+  font-size: 0.9em;
+}
+
+.LoginForm form button {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  padding: 0.5vh 1vw;
+  color: rgb(0, 0, 0);
+  background-color: rgb(233, 233, 233);
+  border: 3px solid black;
+}
+
+.LoginForm form button:disabled {
+  border-color: red;
+}
+
+.LoginForm form button:hover {
+  border-color: #f6b93b;
+  transition: all 0.4s ease 0s;
+}
+
+.LoginForm h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ErrorMsg */
+.ErrorMsg {
+  text-align: center;
+}

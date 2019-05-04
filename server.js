@@ -5,12 +5,14 @@ const session = require("express-session");
 const passport = require("passport");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const PORT = process.env.PORT;
 const SESSION_SECRET = process.env.SESSION_SECRET;
 const app = express();
 
 // Middleware
+app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 app.use(express.json());
 app.use(
   session({

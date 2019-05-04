@@ -1,0 +1,68 @@
+/* REGISTER FORM */
+.RegisterForm {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  margin-top: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  box-shadow: 27px 25px rgba(0, 0, 0, 0.03);
+}
+
+.RegisterForm form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  padding: 0 5vw;
+}
+
+.RegisterForm form label {
+  font-size: 1.2em;
+  padding: 1.5vh 0;
+  width: 14em;
+}
+
+.RegisterForm form input {
+  font-size: 1.2em;
+}
+
+.RegisterForm form input::placeholder {
+  font-size: 0.9em;
+}
+
+.RegisterForm form button {
+  margin-top: 3vh;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  padding: 0.5vh 1vw;
+  color: rgb(0, 0, 0);
+  background-color: rgb(233, 233, 233);
+  border: 3px solid black;
+}
+
+.RegisterForm form button:disabled {
+  border-color: red;
+}
+
+.RegisterForm form button:hover {
+  border-color: #f6b93b;
+  transition: all 0.4s ease 0s;
+}
+
+.RegisterForm h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ErrorMsg */
+.ErrorMsg {
+  text-align: center;
+}

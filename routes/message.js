@@ -9,9 +9,7 @@ const mongoose = require("mongoose");
 // @PRIVATE
 router.put("/add/:id", checkAuth, (req, res) => {
   if (req["user"].id !== req.params.id) {
-    return res
-      .status(403)
-      .json({ msg: "Nu sunteti logat cu user-ul dumneavoastra" });
+    return res.status(403).json("Nu sunteti logat cu user-ul dumneavoastra");
   } else {
     User.findByIdAndUpdate(
       req.params.id,
@@ -35,9 +33,7 @@ router.put("/add/:id", checkAuth, (req, res) => {
 // @PRIVATE
 router.get("/get/:id", checkAuth, (req, res) => {
   if (req["user"].id !== req.params.id) {
-    return res
-      .status(403)
-      .json({ msg: "Nu sunteti logat cu user-ul dumneavoastra" });
+    return res.status(403).json("Nu sunteti logat cu user-ul dumneavoastra");
   } else {
     User.findById(req.params.id)
       .select("message")

@@ -58,9 +58,7 @@ const NavBar = () => {
   return (
     <div className={styles.NavBar}>
       <div className={styles.Logo}>
-        <NavLink exact to="/">
-          <Logo />
-        </NavLink>
+        <Logo />
       </div>
       <div className={combineClass(hamburger)} onClick={toggleHam}>
         <div className={styles.Bar1} />
