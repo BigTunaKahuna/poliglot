@@ -8,6 +8,9 @@ import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import authReducer from "./store/reducers/auth";
+import { persistStore, persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import { PersistGate } from "redux-persist/integration/react";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -15,15 +18,25 @@ const rootReducer = combineReducers({
   auth: authReducer
 });
 
+const persistConfig = {
+  key: "root",
+  storage
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
 const store = createStore(
-  rootReducer,
+  persistedReducer,
   composeEnhancers(applyMiddleware(thunk))
 );
+let persistor = persistStore(store);
 
 const app = (
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <PersistGate persistor={persistor}>
+        <App />
+      </PersistGate>
     </BrowserRouter>
   </Provider>
 );

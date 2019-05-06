@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { withRouter, Redirect } from "react-router-dom";
+import { withRouter, Redirect, NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 
 import styles from "./LoginForm.module.css";
@@ -101,6 +101,7 @@ const LoginForm = props => {
   if (props.loggedIn) {
     authRedirect = <Redirect to={props.pathRedir} />;
   }
+  console.log();
 
   return (
     <div className={styles.LoginForm}>
@@ -137,6 +138,10 @@ const LoginForm = props => {
           Login
         </button>
       </form>
+
+      <div className={styles.CreateAccount}>
+        <NavLink to="/register">Nu ai cont?</NavLink>
+      </div>
     </div>
   );
 };

@@ -58,6 +58,17 @@
   transition: all 0.4s ease 0s;
 }
 
+.LoginForm .CreateAccount {
+  text-align: center;
+  font-size: 1em;
+  color: rgb(0, 121, 26);
+}
+
+.LoginForm .CreateAccount a {
+  font-size: 1em;
+  color: rgb(0, 121, 26);
+}
+
 .LoginForm h2 {
   text-align: center;
   text-transform: uppercase;
