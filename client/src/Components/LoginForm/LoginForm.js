@@ -17,28 +17,6 @@ const LoginForm = props => {
   const [passwordBorder, setPasswordBorder] = useState("");
   const [usernameBorder, setUsernameBorder] = useState("");
 
-  // const handleLogin = e => {
-  //   e.preventDefault();
-  //   axios
-  //     .post(
-  //       "http://localhost:5000/api/auth/login",
-  //       {
-  //         username: username,
-  //         password: password
-  //       },
-  //       { withCredentials: true }
-  //     )
-  //     .then(x => {
-  //       if (x.status === 200) {
-  //         props.history.push("/");
-  //       } else {
-  //         setErr("Nume sau parolă greșită");
-  //         setCheckButton(true);
-  //       }
-  //     })
-  //     .catch(setErr("Nume sau parolă greșită"), setCheckButton(true));
-  // };
-
   const handleLogin = e => {
     e.preventDefault();
     props.onAuth(username, password);

@@ -18,6 +18,8 @@ const reducer = (state = initialState, action) => {
       return { ...state };
     case actionTypes.SET_ERR_BOOL:
       return { ...state, error: false };
+    case actionTypes.AUTH_CHECK_SUCCESS:
+      return { ...state, loggedIn: true };
     default:
       return state;
   }

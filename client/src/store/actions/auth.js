@@ -23,6 +23,10 @@ export const setErrBool = () => {
   return { type: actionTypes.SET_ERR_BOOL };
 };
 
+export const checkLoginStatus = () => {
+  return { type: actionTypes.AUTH_CHECK_SUCCESS };
+};
+
 export const auth = (username, password) => {
   return dispatch => {
     const authData = {
@@ -40,5 +44,23 @@ export const auth = (username, password) => {
         dispatch(authRedirect());
       })
       .catch(err => dispatch(authFail()));
+  };
+};
+
+export const authCheck = () => {
+  return dispatch => {
+    let cookieId = document.cookie.slice(3);
+    axios
+      .get("http://localhost:5000/api/profile/" + cookieId, {
+        withCredentials: true
+      })
+      .then(success => {
+        if (success.status === 200) {
+          dispatch(checkLoginStatus());
+        }
+      })
+      .catch(error => {
+        console.log("Error", error);
+      });
   };
 };

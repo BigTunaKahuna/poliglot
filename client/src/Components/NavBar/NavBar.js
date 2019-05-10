@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import combineClass from "classnames";
 import { connect } from "react-redux";
+import * as actions from "../../store/actions/auth";
 
 import styles from "./NavBar.module.css";
 import Logo from "./Logo/Logo";
@@ -9,6 +10,8 @@ import Logo from "./Logo/Logo";
 const NavBar = props => {
   const [hamburger, setHamburger] = useState([styles.Hamburger]);
   const [clicked, setClicked] = useState(false);
+
+  useEffect(() => props.checkAuth());
 
   const toggleHam = () => {
     if (clicked) {
@@ -114,6 +117,42 @@ const NavBar = props => {
         </nav>
       </div>
     );
+
+    hamburgerMenu = (
+      <div
+        className={styles.HamburgerMenu}
+        style={clicked ? { opacity: 1 } : { opacity: 0 }}
+      >
+        {/* Trigger display onClick with good performance */}
+        <nav style={clicked ? { display: "block" } : { display: "none" }}>
+          <ul>
+            <li>
+              <NavLink exact to="/">
+                Acasă
+              </NavLink>
+            </li>
+            <hr />
+            <li>
+              <NavLink exact to="/limba">
+                Limbă
+              </NavLink>
+            </li>
+            <hr />
+            <li>
+              <NavLink exact to="/compunere">
+                Compunere
+              </NavLink>
+            </li>
+            <hr />
+            <li>
+              <NavLink exact to="/profile">
+                Profilul meu
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    );
   }
   return (
     <div className={styles.NavBar}>
@@ -138,7 +177,15 @@ const mapStateToProps = state => {
   };
 };
 
+const mapDispatchToProps = dispatch => {
+  return {
+    checkAuth: () => {
+      dispatch(actions.authCheck());
+    }
+  };
+};
+
 export default connect(
   mapStateToProps,
-  null
+  mapDispatchToProps
 )(NavBar);

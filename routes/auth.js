@@ -8,7 +8,7 @@ require("../config/passport")(passport);
 // @PUBLIC
 router.post("/login", passport.authenticate("local"), (req, res) => {
   res.cookie("id", req.session.passport.user);
-  res.send(req.session.passport.user).status(200);
+  res.send().status(200);
 });
 
 // @POST
@@ -16,8 +16,9 @@ router.post("/login", passport.authenticate("local"), (req, res) => {
 // @PRIVATE
 router.get("/logout", (req, res) => {
   res.clearCookie("connect.sid");
+  res.clearCookie("id", req.session.passport.user);
   req.session.destroy();
-  res.redirect("/");
+  res.send().status(200);
 });
 
 module.exports = router;

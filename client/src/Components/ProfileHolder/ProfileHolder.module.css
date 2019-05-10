@@ -1,0 +1,43 @@
+/* PROFILE HOLDER */
+.ProfileHolder {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 17vh;
+}
+
+.ProfileHolder .ProfileInformation p {
+  padding-top: 2vh;
+  font-size: 1.5em;
+}
+
+.ProfileHolder .ProfileInformation p span {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1vh 1vw;
+  color: rgb(233, 233, 233);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* LOGOUT BUTTON */
+.Logout button {
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  padding: 0.5vh 1vw;
+  color: rgb(0, 0, 0);
+  background-color: rgb(233, 233, 233);
+  border: 3px solid black;
+}
+
+.Logout button:hover {
+  border-color: #f6b93b;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}

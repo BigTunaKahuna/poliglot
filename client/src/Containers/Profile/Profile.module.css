@@ -1,0 +1,20 @@
+/* PROFILE */
+.Profile {
+  display: grid;
+  grid-template-columns: auto 3fr;
+  grid-template-rows: auto 3fr;
+  grid-template-areas:
+    "navbar navbar"
+    "profile profile";
+}
+
+/* NAVBAR */
+.NavBar {
+  grid-area: navbar;
+}
+
+/* PROFILE HOLDER */
+.ProfileHolder {
+  grid-area: profile;
+  justify-self: center;
+}

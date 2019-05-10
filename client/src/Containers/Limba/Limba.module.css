@@ -1,0 +1,48 @@
+/* LIMBA */
+.Limba {
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 4fr;
+  grid-template-areas:
+    "navbar"
+    "limbi";
+}
+
+/* LIMBI */
+.Limbi {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  padding-bottom: 10vh;
+  grid-area: limbi;
+}
+
+.Limbi a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+/* ENGLEZA */
+.Engleza {
+  padding: 10vh 10vw;
+  border: 2px solid black;
+  background: url(../../assets/uk-flag.svg) center no-repeat;
+  background-size: cover;
+}
+
+/* GERMANA */
+.Germana {
+  padding: 10vh 10vw;
+  border: 2px solid black;
+  background: url(../../assets/german-flag.jpg);
+  background-size: contain;
+}
+
+/* NAVBAR */
+.NavBar {
+  grid-area: navbar;
+}
