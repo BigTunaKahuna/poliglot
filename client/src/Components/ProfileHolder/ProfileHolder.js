@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 
 const ProfileHolder = props => {
   const [username, setUsername] = useState("");
-  const [score, setScore] = useState("");
+  //const [score, setScore] = useState("");
   const [email, setEmail] = useState("");
 
   axios
@@ -14,7 +14,7 @@ const ProfileHolder = props => {
     })
     .then(profile => {
       setUsername(profile.data.user.userName);
-      setScore(profile.data.user.score);
+      //setScore(profile.data.user.score);
       setEmail(profile.data.user.email);
     })
     .catch(err => console.log(err));

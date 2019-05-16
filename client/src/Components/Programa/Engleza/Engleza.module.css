@@ -1,5 +1,71 @@
 /* PROGRAMA ENGLEZA */
 .ProgramaEngleza {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto 4fr;
+  grid-template-areas:
+    "navbar navbar"
+    " sidebar sidebar";
 }
 
 /* NAVBAR */
+.NavBar {
+  grid-area: navbar;
+}
+
+/* SIDEBAR */
+.SideBar {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.SideBar ol {
+  margin: 0;
+  padding-left: 6.5vw;
+  padding-top: 3vh;
+  background-color: rgba(247, 247, 247, 1);
+  border-right: 1px solid #ececec;
+  border-top: 1px solid #ececec;
+}
+.SideBar ol li {
+  margin-top: 5px;
+}
+
+.SideBar ol li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+
+.SideBar ol li a:active {
+  text-decoration: none;
+  color: red;
+}
+
+/* SIDEBAR CONTENT */
+.SideBarContent {
+  padding: 3vh 10vw 0 10vw;
+  border-top: 1px solid #ececec;
+}
+
+.SideBarContent h2 {
+  margin: 0;
+}
+
+.SideBarContent span {
+  color: #c43c7e;
+}
+
+/* MOBILE */
+@media (max-width: 481px) {
+  .SideBar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .SideBar ol {
+    display: none;
+  }
+}

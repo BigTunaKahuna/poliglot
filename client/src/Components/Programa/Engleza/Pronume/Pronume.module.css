@@ -1,0 +1,496 @@
+/* PRONUME */
+.Pronume {
+}
+
+/* CONTAINER PRONUME PERSONAL*/
+.ContainerPers {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "cell1 cell2 cell3 cell4 cell5 cell6 cell7 cell8"
+    "cell9 cell10 cell11 cell12 cell13 cell14 cell15 cell16";
+}
+
+.ContainerPers .Cell1 {
+  grid-area: cell1;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell2 {
+  grid-area: cell2;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell3 {
+  grid-area: cell3;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell4 {
+  grid-area: cell4;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell5 {
+  grid-area: cell5;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell6 {
+  grid-area: cell6;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell7 {
+  grid-area: cell7;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell8 {
+  grid-area: cell8;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell9 {
+  grid-area: cell9;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell10 {
+  grid-area: cell10;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell11 {
+  grid-area: cell11;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell12 {
+  grid-area: cell12;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell13 {
+  grid-area: cell13;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell14 {
+  grid-area: cell14;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell15 {
+  grid-area: cell15;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPers .Cell16 {
+  grid-area: cell16;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* EXEMPLU */
+.Exemplu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CONTAINER OBIECTIV */
+.ContainerOb {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "cell1 cell2 cell3 cell4 cell5 cell6 cell7"
+    "cell8 cell9 cell10 cell11 cell12 cell13 cell14 ";
+}
+
+.ContainerOb .Cell1 {
+  grid-area: cell1;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell2 {
+  grid-area: cell2;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell3 {
+  grid-area: cell3;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell4 {
+  grid-area: cell4;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell5 {
+  grid-area: cell5;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell6 {
+  grid-area: cell6;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell7 {
+  grid-area: cell7;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell8 {
+  grid-area: cell8;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell9 {
+  grid-area: cell9;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell10 {
+  grid-area: cell10;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell11 {
+  grid-area: cell11;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell12 {
+  grid-area: cell12;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell13 {
+  grid-area: cell13;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerOb .Cell14 {
+  grid-area: cell14;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* CONTAINER POSESIV */
+.ContainerPos {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "cell1 cell2 cell3 cell4 cell5 cell6 cell7"
+    "cell8 cell9 cell10 cell11 cell12 cell13 cell14 ";
+}
+
+.ContainerPos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ContainerPos .Cell1 {
+  grid-area: cell1;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell2 {
+  grid-area: cell2;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell3 {
+  grid-area: cell3;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell4 {
+  grid-area: cell4;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell5 {
+  grid-area: cell5;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell6 {
+  grid-area: cell6;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell7 {
+  grid-area: cell7;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell8 {
+  grid-area: cell8;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell9 {
+  grid-area: cell9;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell10 {
+  grid-area: cell10;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell11 {
+  grid-area: cell11;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell12 {
+  grid-area: cell12;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell13 {
+  grid-area: cell13;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerPos .Cell14 {
+  grid-area: cell14;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* CONTAINER DEMONSTRATIV */
+.ContainerDem {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "cell1 cell2 cell3 cell4"
+    "cell5 cell6 cell7 cell8";
+}
+
+.ContainerDem ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ContainerDem .Cell1 {
+  grid-area: cell1;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerDem .Cell2 {
+  grid-area: cell2;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerDem .Cell3 {
+  grid-area: cell3;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerDem .Cell4 {
+  grid-area: cell4;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerDem .Cell5 {
+  grid-area: cell5;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerDem .Cell6 {
+  grid-area: cell6;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerDem .Cell7 {
+  grid-area: cell7;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerDem .Cell8 {
+  grid-area: cell8;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* CONTAINER INDEFINIT */
+.ContainerInd {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "cell1 cell2 cell3 "
+    "cell4 cell5 cell6";
+}
+
+.ContainerInd .Cell1 {
+  grid-area: cell1;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerInd .Cell2 {
+  grid-area: cell2;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerInd .Cell3 {
+  grid-area: cell3;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerInd .Cell4 {
+  grid-area: cell4;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerInd .Cell5 {
+  grid-area: cell5;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+.ContainerInd .Cell6 {
+  grid-area: cell6;
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .ContainerPers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "cell1 cell9"
+      "cell2 cell10"
+      "cell3 cell11"
+      "cell4 cell12"
+      "cell5 cell13"
+      "cell6 cell14"
+      "cell7 cell15"
+      "cell8 cell16";
+  }
+
+  .ContainerOb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "cell1 cell8"
+      "cell2 cell9"
+      "cell3 cell10"
+      "cell4 cell11"
+      "cell5 cell12"
+      "cell6 cell13"
+      "cell7 cell14";
+  }
+
+  .ContainerPos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "cell1 cell8"
+      "cell2 cell9"
+      "cell3 cell10"
+      "cell4 cell11"
+      "cell5 cell12"
+      "cell6 cell13"
+      "cell7 cell14";
+  }
+
+  .ContainerDem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "cell1 cell5"
+      "cell2 cell6"
+      "cell3 cell7"
+      "cell4 cell8";
+  }
+
+  .ContainerInd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "cell1 cell4"
+      "cell2 cell5"
+      "cell3 cell6";
+  }
+}

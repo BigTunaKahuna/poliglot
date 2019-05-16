@@ -10,11 +10,11 @@ const Limba = () => {
         <NavBar />
       </div>
       <div className={styles.Limbi}>
-        <NavLink to="/limba/engleza" className={styles.Engleza}>
+        <NavLink to="/limba/engleza/introducere" className={styles.Engleza}>
           Engleză
         </NavLink>
 
-        <NavLink to="/limba/germana" className={styles.Germana}>
+        <NavLink to="/limba/germana/introducere" className={styles.Germana}>
           Germană
         </NavLink>
       </div>

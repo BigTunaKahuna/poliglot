@@ -1,0 +1,13 @@
+/* CONTAINER */
+.Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Container .Engleza {
+  width: 100%;
+}
+
+.Container .Romana {
+  width: 100%;
+}
