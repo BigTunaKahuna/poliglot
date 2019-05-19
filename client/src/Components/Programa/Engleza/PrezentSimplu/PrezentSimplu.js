@@ -28,15 +28,25 @@ const PrezentSimplu = () => {
         singular unde este <span>Subiect + Verb(s/es)</span>
       </p>
       <p>
+        De urmărit cazurile în care apar adverbele specifice:{" "}
+        <span>always</span>, <span>every day</span>, <span>usually</span>,
+        <span>sometimes</span>, <span>often</span>, <span>never</span>.
+      </p>
+      <p>
         <b>Notă!</b> Când verbul se termină în "y", "y"-ul se transformă în "i"
         și se adaugă "es". Exemplu: <span>fly - flie</span>,{" "}
         <span>study - studies</span>
+      </p>
+      <p>
+        La forma negativă se adaugă <span>do not(don't)</span> iar pentru
+        persoana a 3-a singular <span>does not(doesn't)</span>
       </p>
       <p>
         Pentru interogări se utilizează următoarea formă:{" "}
         <span>Do + Subiect + Verb?</span> iar pentru persoana a treia singular{" "}
         <span>Does + he/she/it + Verb?</span>.
       </p>
+      <br />
       <p>Exemplu propoziții afirmative:</p>
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <div>
@@ -82,7 +92,7 @@ const PrezentSimplu = () => {
           </p>
         </div>
       </div>
-
+      <br />
       <p>Exemplu propoziții interogative:</p>
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <div>
@@ -130,7 +140,7 @@ const PrezentSimplu = () => {
         </div>
       </div>
       <br />
-      <p>Present Simple poate fi folosit pentru următoarele scenarii:</p>
+      <h3>Folosire</h3>
       <p>
         1. Acțiuni generale care au loc într-un interval de timp nespecificat.
         Adevăruri general valabile:
@@ -177,8 +187,8 @@ const PrezentSimplu = () => {
         They <span>arrive</span> tomorrow at eleven. - Ei ajung mâine la 11.
       </p>
 
-      <BackButton to="limba/engleza/tari-capitale-limbi-cetateni" />
-      <NextButton to="limba/engleza/prezent-continuu" />
+      <BackButton to="/limba/engleza/tari-capitale-limbi-cetateni" />
+      <NextButton to="/limba/engleza/prezent-continuu" />
     </div>
   );
 };

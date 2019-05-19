@@ -13,6 +13,7 @@ import Zile from "./Zile/Zile";
 import Luni from "./Luni/Luni";
 import Tari from "./Tari/Tari";
 import PrezentSimplu from "./PrezentSimplu/PrezentSimplu";
+import PrezentContinuu from "./PrezentContinuu/PrezentContinuu";
 
 const ProgramaEngleza = () => {
   return (
@@ -133,6 +134,17 @@ const ProgramaEngleza = () => {
                 Prezent Simplu
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/limba/engleza/prezent-continuu"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "black"
+                }}
+              >
+                Prezent Continuu
+              </NavLink>
+            </li>
           </ol>
           <Route
             exact
@@ -221,6 +233,15 @@ const ProgramaEngleza = () => {
             render={() => (
               <div className={styles.SideBarContent}>
                 <PrezentSimplu />
+              </div>
+            )}
+          />
+          <Route
+            exact
+            path="/limba/engleza/prezent-continuu"
+            render={() => (
+              <div className={styles.SideBarContent}>
+                <PrezentContinuu />
               </div>
             )}
           />
