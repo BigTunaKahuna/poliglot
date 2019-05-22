@@ -8,6 +8,7 @@ import Register from "./Containers/Register/Register";
 import Profile from "./Containers/Profile/Profile";
 import Limba from "./Containers/Limba/Limba";
 import ProgramaEngleza from "./Components/Programa/Engleza/Engleza";
+import ProgramaGermana from "./Components/Programa/Germana/Germana";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
         <Route exact path="/limba" component={Limba} />
         {/* ENGLEZA */}
         <Route exact path="/limba/engleza/:id" component={ProgramaEngleza} />
+        <Route exact path="/limba/germana/:id" component={ProgramaGermana} />
       </Switch>
     );
 

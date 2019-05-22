@@ -5,7 +5,9 @@ import NextButton from "../../NextButton/NextButton";
 const PrezentContinuu = () => {
   return (
     <div>
-      <h2>Prezent continuu (Present Continuous)</h2>
+      <h2>
+        Prezent continuu (<span>Present Continuous</span>)
+      </h2>
       <p>
         Prezentul continuu este folosit pentru a exprima o acțiune care se
         întâmplă în prezent.
@@ -61,7 +63,7 @@ const PrezentContinuu = () => {
         - Deobicei nu mănânc dulciuri dar astăzi fac o excepție.
       </p>
       <BackButton to="prezent-simplu" />
-      <NextButton to="past-simple" />
+      <NextButton to="trecut-simplu" />
     </div>
   );
 };

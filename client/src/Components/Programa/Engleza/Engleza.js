@@ -14,6 +14,10 @@ import Luni from "./Luni/Luni";
 import Tari from "./Tari/Tari";
 import PrezentSimplu from "./PrezentSimplu/PrezentSimplu";
 import PrezentContinuu from "./PrezentContinuu/PrezentContinuu";
+import TrecutSimplu from "./TrecutSimplu/TrecutSimplu";
+import TrecutContinuu from "./TrecutContinuu/TrecutContinuu";
+import PrezentPerfect from "./PrezentPerfect/PrezentPerfect";
+import TrecutPerfect from "./TrecutPerfect/TrecutPerfect";
 
 const ProgramaEngleza = () => {
   return (
@@ -145,6 +149,50 @@ const ProgramaEngleza = () => {
                 Prezent Continuu
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/limba/engleza/trecut-simplu"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "black"
+                }}
+              >
+                Trecut Simplu
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/limba/engleza/trecut-continuu"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "black"
+                }}
+              >
+                Trecut Continuu
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/limba/engleza/prezent-perfect"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "black"
+                }}
+              >
+                Prezent Perfect
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/limba/engleza/trecut-perfect"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "black"
+                }}
+              >
+                Trecut Perfect
+              </NavLink>
+            </li>
           </ol>
           <Route
             exact
@@ -242,6 +290,42 @@ const ProgramaEngleza = () => {
             render={() => (
               <div className={styles.SideBarContent}>
                 <PrezentContinuu />
+              </div>
+            )}
+          />
+          <Route
+            exact
+            path="/limba/engleza/trecut-simplu"
+            render={() => (
+              <div className={styles.SideBarContent}>
+                <TrecutSimplu />
+              </div>
+            )}
+          />
+          <Route
+            exact
+            path="/limba/engleza/trecut-continuu"
+            render={() => (
+              <div className={styles.SideBarContent}>
+                <TrecutContinuu />
+              </div>
+            )}
+          />
+          <Route
+            exact
+            path="/limba/engleza/prezent-perfect"
+            render={() => (
+              <div className={styles.SideBarContent}>
+                <PrezentPerfect />
+              </div>
+            )}
+          />
+          <Route
+            exact
+            path="/limba/engleza/trecut-perfect"
+            render={() => (
+              <div className={styles.SideBarContent}>
+                <TrecutPerfect />
               </div>
             )}
           />
