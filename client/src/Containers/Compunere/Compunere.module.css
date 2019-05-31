@@ -1,0 +1,38 @@
+/* COMPUNERE */
+.Compunere {
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 4fr;
+  grid-template-areas:
+    "navbar"
+    "limbi";
+}
+
+.Compunere .Main {
+  padding-top: 4vh;
+}
+
+/* MAIN */
+.Main a {
+  text-decoration: none;
+}
+
+.Main a:visited {
+  color: black;
+}
+
+/* NAVBAR */
+.NavBar {
+  grid-area: navbar;
+}
+
+/* MESSAGE LIST */
+.MessageList ul {
+  list-style: none;
+}
+
+.MessageList ul li {
+  padding-top: 6vh;
+}

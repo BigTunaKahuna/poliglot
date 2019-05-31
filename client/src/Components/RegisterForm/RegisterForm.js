@@ -90,7 +90,7 @@ const RegisterForm = props => {
         password: password,
         confPassword: confPassword,
         email: email
-      }) //TODO: Push to account created page
+      })
       .then(props.history.push("/login"))
       .catch(
         err => setErrMsg(err.request.response.replace(/"/gi, " ").trim()),

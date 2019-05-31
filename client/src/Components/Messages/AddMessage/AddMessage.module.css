@@ -1,0 +1,44 @@
+/* ARTICOL */
+.Articol {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Articol button {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  padding: 0.5vh 1vw;
+  color: rgb(0, 0, 0);
+  background-color: rgb(233, 233, 233);
+  border: 3px solid black;
+}
+
+.Articol button:disabled {
+  border-color: red;
+}
+
+.Articol button:hover {
+  border-color: #f6b93b;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.Articol label {
+  margin-top: 5vh;
+}
+
+.Articol input {
+  margin-top: 1vh;
+}
+
+.Articol textarea {
+  margin-top: 2vh;
+  font-size: 1.3em;
+}

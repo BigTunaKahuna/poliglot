@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 // @PUT
 // @api/message/add/:id
 // @PRIVATE
-router.put("/add/:id", checkAuth, (req, res) => {
+router.post("/add/:id", checkAuth, (req, res) => {
   if (req["user"].id !== req.params.id) {
     return res.status(403).json("Nu sunteti logat cu user-ul dumneavoastra");
   } else {
@@ -47,7 +47,7 @@ router.get("/get/:id", checkAuth, (req, res) => {
 // @DELETE
 // @api/message/delete/:id/:index
 // @PRIVATE
-router.put("/delete/:id/:index", checkAuth, (req, res) => {
+router.delete("/delete/:id/:index", checkAuth, (req, res) => {
   if (req["user"].id !== req.params.id) {
     return res
       .status(403)

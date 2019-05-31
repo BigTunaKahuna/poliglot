@@ -11,6 +11,7 @@ import Luni from "./Luni/Luni";
 import Anotimp from "./Anotimp/Anotimp";
 import Directii from "./Directii/Directii";
 import Substantiv from "./Substantiv/Substantiv";
+import Vocabular from "./Vocabular/Vocabular";
 
 const ProgramaGermana = () => {
   return (
@@ -109,6 +110,17 @@ const ProgramaGermana = () => {
                 Substantiv
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/limba/germana/vocabular"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "black"
+                }}
+              >
+                Vocabular
+              </NavLink>
+            </li>
           </ol>
           <Route
             exact
@@ -179,6 +191,15 @@ const ProgramaGermana = () => {
             render={() => (
               <div className={styles.SideBarContent}>
                 <Substantiv />
+              </div>
+            )}
+          />
+          <Route
+            exact
+            path="/limba/germana/vocabular"
+            render={() => (
+              <div className={styles.SideBarContent}>
+                <Vocabular />
               </div>
             )}
           />
