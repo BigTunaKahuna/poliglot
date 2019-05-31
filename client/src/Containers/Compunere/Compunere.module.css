@@ -36,3 +36,9 @@
 .MessageList ul li {
   padding-top: 6vh;
 }
+
+/* LINK */
+.Link {
+  display: flex;
+  justify-content: center;
+}

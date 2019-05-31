@@ -44,12 +44,6 @@ const NavBar = props => {
           </li>
           <hr />
           <li>
-            <NavLink exact to="/compunere">
-              Compunere
-            </NavLink>
-          </li>
-          <hr />
-          <li>
             <NavLink exact to="/login">
               Intră în cont
             </NavLink>
@@ -71,11 +65,6 @@ const NavBar = props => {
           <li>
             <NavLink exact to="/limba">
               Limbă
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/compunere">
-              Compunere
             </NavLink>
           </li>
           <li>

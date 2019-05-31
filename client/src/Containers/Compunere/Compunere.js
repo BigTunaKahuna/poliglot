@@ -17,26 +17,28 @@ const Compunere = () => {
 
       <div className={styles.Main}>
         <Router>
-          <NavLink
-            to="/compunere/toate"
-            style={{ fontSize: "1.5em", paddingRight: "5vw" }}
-            activeStyle={{
-              fontWeight: "bold",
-              color: "green"
-            }}
-          >
-            Toate mesajele
-          </NavLink>
-          <NavLink
-            to="/compunere/adauga"
-            style={{ fontSize: "1.5em", paddingLeft: "5vw" }}
-            activeStyle={{
-              fontWeight: "bold",
-              color: "green"
-            }}
-          >
-            Adaugă mesaj
-          </NavLink>
+          <div className={styles.Link}>
+            <NavLink
+              to="/compunere/toate"
+              style={{ fontSize: "1.5em", paddingRight: "5vw" }}
+              activeStyle={{
+                fontWeight: "bold",
+                color: "green"
+              }}
+            >
+              Toate mesajele
+            </NavLink>
+            <NavLink
+              to="/compunere/adauga"
+              style={{ fontSize: "1.5em", paddingLeft: "5vw" }}
+              activeStyle={{
+                fontWeight: "bold",
+                color: "green"
+              }}
+            >
+              Adaugă mesaj
+            </NavLink>
+          </div>
           <Route
             exact
             path="/compunere/toate"
